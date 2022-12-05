@@ -1,0 +1,47 @@
+1- São funções ou classes que compoem um elemento único do DOM, pode ser um botao, um input, qualquer elemento HTML/Css/Js etc. São úteis porque permitem você dividir a UI em partes independentes, reutilizáveis e pensar em cada parte isoladamente.
+
+2- Por função e por classe. 
+Esse é um exemplo de componente de função.
+function Welcome(props) {
+  return <h1>Olá, {props.name}</h1>;
+} 
+Esse é um exemplo de componente usando classe.
+class Welcome extends React.Component {
+  render() {
+    return <h1>Olá, {this.props.name}</h1>;
+  }
+}
+
+3- É utilizar um componente para renderizar vários componentes ou várias vezes o mesmo componente etc.
+
+4- Para facilitar a organização e a manipulação dos componentes, se precisar alterar um componente futuramente pode se alterar apenas na parte que precisa sem modificar o código inteiro.
+
+5- São passados como parâmetros no componente, servem para passar qualquer código do componente no momento da criação dele.
+
+6-O state contém dados específicos ao componente que podem mudar com o tempo. O state é definido pelo usuário e deve ser um objeto JavaScript.
+Se algum valor não for usado para renderizamento ou para controle de data flow (por exemplo, um ID de timer), você não precisa colocar no state. Tais valores podem ser definidos como campos na instância do componente.
+
+7- A grande diferença entre props e state é que adereços que você passa para um componente e o state é tratado dentro desse componente. Os props são tratados fora do componente.
+
+8- Possui 4 fases.
+Inicialização, montagem, atualização e desmontagem.
+Fase 1: Nesta fase, o componente React se prepara para sua inicialização, configurando os estados iniciais e props padrões se houverem.
+Fase 2: Depois de preparar com todas as necessidades básicas, estado e props, o nosso Componente React está pronto para ser montado no DOM do navegador. Esta fase fornece métodos que podem ser invocados antes e depois da montagem dos componentes. Os métodos que são chamados nesta fase são componentWillMount, render, componentDidMount.
+Fase 3: Esta fase começa quando o componente React já nasceu no navegador e cresce recebendo novas atualizações. O componente pode ser atualizado de duas maneiras, através do envio de novas props ou a atualização do seu estado. E possui vários métodos também de acordo com o tipo de atualização, seja por props ou states.
+Fase 4: Nesta fase, o componente não é mais necessário e será desmontado do DOM.
+Chamamos o método componentWillUnmount Este método é o último método no ciclo de vida. Isso é executado imediatamente antes de o componente ser removido do DOM.
+
+9- O fluxo de dados se comporta em componentes pai e filho.
+Passagem de dados de componente pai para componente filho é através das props.
+o componente filho renderiza dados usando o this.props(em classe).
+Passando ações de um componente filho para um componente pai:
+
+Um usuário interage com algum elemento da sua aplicação (um click em um botão, por exemplo)
+Um event listener em um elemento da sua aplicação é disparado ( onClick)
+um handler é disparado (handleClick)
+Uma função callback dentro do handler é disparado (onHandlerClick)
+A logica do call back é executada dentro do componente pai
+O state é atualizado
+O dado é mandado de volta e a DOM renderiza novamente.
+
+10-

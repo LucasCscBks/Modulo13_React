@@ -1,0 +1,10 @@
+6- Fazer requisição utilizando o formulário e retorno dela guardar no UseState!
+
+
+{
+    "username": "Testando Agora",
+    "password": "123abc",
+    "first_name": "Luks" ,
+    "last_name": "George",
+    "email": "tests@gmail.com"
+}

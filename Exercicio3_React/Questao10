@@ -1,0 +1,8 @@
+Exercício 3 , questão proposta em aula:
+Questão 10 -
+a) Criar um componente para o formulário
+b) Adicionar inputs (email, name, password...) como children props do formulário
+c) Adicionar um button recebendo um texto do props do formulário
+d) Ao submeter o formulário com sucesso abrir um modal
+e) Criar um componente de modal 
+f) Ao clicar fora ou no botão X(fechar) do modal, fecha-lo.

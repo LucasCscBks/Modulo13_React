@@ -1,0 +1,68 @@
+1. React é um framework? Justifique sua resposta apontando características que
+defendam seu posicionamento.
+R- Não, é uma biblioteca (lib). As bibliotecas são usadas pelos nossos códigos, enquanto os frameworks é quem costumam utilizar os nossos códigos. No React nós temos basicamente funções para a criação de componentes e criação de estados. Estamos no controle o tempo todo, nós chamamos as funções do React, podemos decidir qual será a estrutura da nossa aplicação e o fluxo com o qual ela funciona.
+
+
+2. Cite exemplos de pelo menos 3 (três) sites que utilizam o React como base UI, e
+explique sua experiência de navegação. Exemplo: carregamento, interação e etc.
+R- Facebook, instagram, DropBox, Netflix, Uber Eats etc. A minha experiência é bem gratificante nesses websites citados, uma avaliação de carregamento e interações bem positiva. Ótimo desempenho de funcionalidades!
+
+
+3. Qual a última versão do React e características para melhoria de performance ela
+trás?
+R- versao 18. Uma das melhorias mais legais é o automatic batching. Novas apis:
+useTransition(): um hook para iniciar transições, incluindo um valor para rastrear o estado pendente.
+startTransition(): um método para iniciar transições quando hooks não pode ser utilizados.
+useDeferredValue(): permite adiar a nova renderização de uma parte não urgente da árvore.
+
+
+4. O que é uma aplicação SPA (Single Page Applications), do que difere de uma
+aplicação sem o uso do conceito? Cite exemplos.
+R- SPA, ou Single Page Application, é uma aplicação em que todas as funcionalidades estão em uma única página. Ao invés de recarregar a página toda, só uma parte do conteúdo muda. Em um modelo convencional você é redirecionado para uma nova página em que carrega tudo nela, na SPA não, só muda uma parte da página, o seu conteúdo,etc.
+Bons exemplos são o Gmail, Outlook entre outras aplicações web de email.
+
+
+
+5. Qual a relação de SPA com React?
+R- Pela forma que o React trabalha com o DOM ele é perfeito para se fazer SPA.
+Tendo uma melhor performance, possui uma livraria pequena, que fica mais "fácil" de ser aprendida em menos tempo. Seus componentes UI ajudam demais no desenvolvimento da aplicação, entre outras coisas.
+
+
+6. Pesquise pelo menos 3 principais bibliotecas que podem ser usadas com React.
+Descreva de forma sucinta, o uso de cada uma delas?
+R- a- Create React App - É uma interface em linha de comando criada por desenvolvedores do Facebook que possibilita a você facilmente criar um projeto React.js. Ela constrói estruturas de catálogos e arquivos, incluindo ferramentas necessárias no começo que ajudam a construir, testar e lançar sua aplicação.
+b- Material UI - Material UI é um conjunto de componentes criados pelo Google, que implementa seu famoso Material Design. Com mais de 36 mil estrelas no Github, é o pacote de UI mais popular de todas as bibliotecas React. É simples, atraente, leve e fácil de usar.
+c- Styled Components - É uma ferramenta CSS que ajuda a organizar o seu projeto. Ela ajuda a criar pequenos e reusáveis componentes responsáveis pela aparência do seu app. Com ela você pode usar uma sintaxe CSS diretamente dentro do seu componente.
+
+7. Liste os comandos necessários para configuração e preparação do ambiente de
+desenvolvimento com React.
+R- Step 1 - Create the Root Folder:
+-mkdir reactApp
+-cd reactApp
+-npm init
+Step 2 - install React and react dom:
+-npm install react --save
+-npm install react-dom --save
+Step 3 - Install webpack:
+-npm install webpack webpack-dev-server webpack-cli --save
+Step 4 - Install babel:
+-npm install babel-core babel-loader babel-preset-env 
+   babel-preset-react html-webpack-plugin --save-dev
+Step 5 - Create the Files:
+-type nul > index.html
+-type nul > App.js
+-type nul > main.js
+-type nul > webpack.config.js
+-type nul > .babelrc
+Step 6 - Set Compiler, Server and Loaders:
+- Configurar o webpack.config
+Step 7 - index.html:
+Step 8 − App.jsx and main.js:
+Step 9 - Running the Server:
+-npm start
+Step 10 - Generating the bundle:
+-npm run build
+
+8. Deixe o ambiente configurado para a próxima aula.
+R- Feito!
+
