@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.opacity {
+    opacity: 0.3;
+    background-color: rgba(0,255,0,1);
+}
